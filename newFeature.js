@@ -1,3 +1,3 @@
 console.log("hello world");
-
-console.log("goal");
+let str = "simultaneously";
+console.log(str);
