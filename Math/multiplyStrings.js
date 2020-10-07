@@ -12,4 +12,4 @@ const multiply = function(num1, num2) {
     return sum.toString();
 };
 
-console.log(multiply("123456789", "987621"));
+console.log(multiply("123489", "987621"));
