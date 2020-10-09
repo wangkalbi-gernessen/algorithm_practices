@@ -8,7 +8,7 @@ const addDigits = function(num) {
   let sum = num % 10 + Math.floor(num / 10);
   let answer = sum % 10 + Math.floor(sum / 10);
   return answer;
-  
+  jijiijijiji
 };
 
 console.log(addDigits(38));
