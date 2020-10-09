@@ -1,14 +1,24 @@
 'use strict';
 
 /**
- * @param {number} num
- * @return {number}
+ * @param {num} num
+ * @return {num}
  */
-const addDigits = function(num) {
-  let sum = num % 10 + Math.floor(num / 10);
-  let answer = sum % 10 + Math.floor(sum / 10);
-  return answer;
-  
-};
+const addDigits = function(num){
+  let sum = 0;
+  let steps = 0;
+  while(num > 0){
+    let remainder = num % 10;
+    sum += remainder;
+    num = Math.floor(num / 10);
+    steps++;
+  }
 
-console.log(addDigits(38));
+  if(sum < 10){
+    return sum;
+  }else{
+    return addDigits(sum);
+  }
+}
+
+console.log(addDigits(97));
