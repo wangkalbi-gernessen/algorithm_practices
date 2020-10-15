@@ -16,5 +16,5 @@ const runningSum = function(nums) {
   return result;
 };
 
-let arrays = [3, 1, 2, 10, 1];
+let arrays = [1, 2, 3, 4];
 console.log(runningSum(arrays));
