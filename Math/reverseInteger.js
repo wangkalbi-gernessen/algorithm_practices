@@ -5,34 +5,24 @@
  * @return {number}
  */
 const reverse = function(x) {
-  let str = "";
+  let result = "";
+  
   if(x === 0){
     return 0;
   }else if(x > 0){
-    let strNum = x.toString();
-    if(strNum[strNum.length - 1] === '0'){
-      
+    let num = x;
+    while(num > 0){
+      let remainder = num % 10;
+      result += remainder.toString();
+      num = Math.floor(num / 10);
     }
+    return parseInt(result);
+    // let strToInt = parseInt(result);
+    // if(strToInt < 0){
+  }else if(x < 0){
     
-    
-    
-      for(let i = strNum.length - 1; i >= 0; i--){
-        
-          str += strNum[i];
-        }
-      }
-      return str;
-  }else if (x < 0){
-    let strNum = x.toString();
-    for(let i = strNum.length - 1; i > 0; i--){
-      if(strNum[strNum.length - 1] === "0"){
-        continue;
-      }else{
-        str += strNum[i];
-      }
-    }
-    return str * -1;
   }
+
 };
 
-console.log(reverse(120));
+console.log(reverse(-123));
