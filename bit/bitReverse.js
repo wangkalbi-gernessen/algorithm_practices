@@ -4,17 +4,16 @@
  * @param {number} n - a positive integer
  * @return {number} - a positive integer
  */
-let reverseBits = function(n) {
+const reverseBits = function(n) {
+  let binary = n.toString(2);
   let result = "";
-  let binary = n.toString(2)
-  console.log(binary);
-  for(let i = binary.length-1; i >= 0; i--){
-    result += binary[i];
+  let splitVal = binary.split('');
+
+  for(let i = splitVal.length-1; i >= 0; i--){
+    result += splitVal[i];
   }
-  return result;
-  
+  let toDecimal = parseInt(result, 2);
+  return toDecimal;
 };
 
-let powArgument = Math.pow(2, 31) -1;
-console.log(powArgument);
-console.log(reverseBits(powArgument));
+console.log(reverseBits(4294967293));
