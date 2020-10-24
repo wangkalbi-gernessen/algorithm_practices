@@ -21,5 +21,5 @@ const smallerNumbersThanCurrent = function(nums) {
   return result;
 };
 
-let arrays = [6, 5, 4, 8];
+let arrays = [7, 7, 7, 7];
 console.log(smallerNumbersThanCurrent(arrays));
