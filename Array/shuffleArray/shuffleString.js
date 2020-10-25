@@ -6,13 +6,14 @@
  * @return {string}
  */
 const restoreString = function(s, indices) {
-  let result = "";
-
+  let transit =[];
+  let newPosition;
   for(let i = 0; i <= indices.length - 1; i++){
-    let j = indices[i];
-    result += s[j] // l 
+    newPosition = indices[i];
+    transit[newPosition] = s[i];
   }
-  return result;
+  let result = transit.join('');  
+  return result; 
 }
 
 let str = "aiohn"
