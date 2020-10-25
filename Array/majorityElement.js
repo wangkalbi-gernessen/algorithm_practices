@@ -5,14 +5,14 @@
  * @return {number}
  */
 const majorityElement = function(nums) {
-  let maxCount = 0;
-  for(let i = 0; i < nums.length - 1; i++){
-    
-  }  
-
-
-
-
+  nums.sort();
+  const arrLength = nums.length;
+  
+  if(arrLength % 2 === 0){
+    return nums[arrLength / 2];
+  }else{
+    return nums[(arrLength - 1) / 2];
+  }
 };
 
 let array = [2,2,1,1,1,2,2];
