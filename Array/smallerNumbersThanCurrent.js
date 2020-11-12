@@ -9,6 +9,8 @@ let count;
 let result = [];
 
 const smallerNumbersThanCurrent = function(nums) {
+  let result = [];
+  let count; 
   for(let i = 0; i <= nums.length - 1; i++){
       count = 0;
     for(let j = 0; j <= nums.length -1; j++){
