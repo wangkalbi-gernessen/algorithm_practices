@@ -18,7 +18,7 @@ const sumOfUnique = function(nums) {
       }
     }
   }
-  let answer = result.reduce((a,b) => a+b, 0);
+  let answer = result.reduce((a, b) => a + b, 0);
   return answer;
 };
 
